@@ -1,0 +1,23 @@
+div .lor{
+	color: red;
+}
+
+div > h2{
+	color: aqua;
+}
+
+#test p{
+	color: blue;
+}
+
+#hiden_sec h2 {
+	font-size: 30px;
+}
+
+.bbb{
+	font-size: 15px;
+}
+
+#id_div .bbb{
+	color: brown;
+} 

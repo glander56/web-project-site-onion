@@ -1,0 +1,815 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(0deg) translate(-5px, 6px);
+    transform: rotate(0deg) translate(-5px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(0deg) translate(0px, -8px);
+    transform: rotate(0deg) translate(-5px, -8px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* HEADER START*/
+header{
+    height: 75px;
+    display: flex;
+    background: white;
+}
+.center-header{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+/* LOGO START */
+.header__logo{
+    margin-top: 13px;
+    padding-bottom: 8px;
+}
+.header__logo img:hover{
+    transition: transform .1s;
+    transform: scale(1.1);
+}
+.header__logo img{
+    width: 150px;
+    cursor: pointer;
+}
+nav{
+    margin-left: 400px;
+}
+.topnav{
+    display: flex;
+}
+
+.topnav a:hover, .dropdown-content a:hover{
+    color: rgb(145, 64, 95);
+}
+.topnav a{
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0 15px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+.topnav .icon{
+    display: none;
+    padding: 0;
+}
+.topnav button{
+    margin-left: 30px;
+    box-shadow: 0 0 20px rgb(218, 218, 218);
+    color: white;
+    font-size: 16px;
+    padding: 12px 0;
+    border-radius: 6px;
+    border: none;
+    width: 70px;
+    background-color: #9A4B63;
+}
+.topnav button:hover{
+    background-color: #7E3E4F;
+}
+/* DROPDOWN-LINK START*/
+
+.more-dropdown{
+    position: relative;
+    top: 7px;
+    left: -1px;
+}
+
+
+/* .dropdown-link{
+    position: relative;
+}
+.material-symbols-outlined{
+    position: relative;
+    right: -7%;
+    top: 20%;
+}
+
+.btn a{
+    color: white;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: -130px;
+    z-index: 1;
+    padding: 20px 10px;
+    width: 240px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.dropdown-content a{
+    text-align: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    text-align: left;
+}
+.dropdown-link:hover .dropdown-content{
+    display: block;
+} */
+
+/* WRAPPER START */
+.wrapper{
+    width: 82%;
+    margin: 0 auto;
+}
+.lidarCamera-block{
+    background: black url("https://onion.io/wp-content/uploads/2020/10/point-cloud-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.main__lidarCamera{
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+}
+
+.lidarCamera__left{
+    height: 300px;
+    width: 500px;
+    padding: 40px 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.lidarCamera__left h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.lidarCamera__left p{
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+.lidarCamera__left button{
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 20px;
+    border: 0;
+    background-color: rgb(145, 64, 95);
+    color: white;
+    border-radius: 5px;
+}
+.lidarCamera__right img{
+    padding-left: 10px;
+    width: 500px;
+}
+
+
+
+
+
+.compute-platforms-block{
+    padding: 100px 0 140px 0;
+}
+.compute-platform-main{
+    text-align: center;
+}
+.compute-platform-main h2{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.compute-platform-main p{
+    font-size: 25.6px;
+    margin-bottom: 80px;
+}
+.compute-platform-cards{
+    display: flex;    
+}
+.compute-platform-card{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+.compute-platform-card img{
+    max-width: 100px;
+    margin: 10px auto;
+}
+.compute-platform-card p{
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+.concept-block-all{
+    padding: 25px 20px;
+    background-color: #FAF8FC;
+}
+.concept-production{
+    display: flex;
+    margin: 0 auto 50px 0;
+}
+.production-info{
+    text-align: center;
+}
+.production-info h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.production-info p{
+    font-size: 25.6px;
+    margin-bottom: 20px;
+}
+.concept-production span{
+    border: none;
+    color: white;
+    background-color: #9A4B63;
+    border-radius: 2px;
+    margin: auto;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.concept-production span:hover{
+    background-color: #FF5544;
+    cursor: pointer;
+}
+.concept-cards{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.concept-card.gateway{
+    flex-direction: row-reverse;
+}
+.sales .block-info{
+    background-color: #34AEE1;
+}
+.gateway .block-info{
+    background-color: #2ECC70;
+}
+.management .block-info{
+    background-color: #E99044;
+}
+.block-info h2, .block-info p{
+    font-size: 22.4px;
+    font-weight: 500;
+    
+}
+.block-info h2{
+    padding-bottom: 20px;
+}
+.block-info p a{
+    color: white;
+    text-decoration: underline;
+}
+.concept-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.block-info{
+    background-color: black;
+    color: white;
+    padding: 40px 30px 60px 30px;
+}
+.concept-card.sales img{
+    width: 550px;
+    padding-left: 20px;
+}
+.concept-card.gateway img{
+    width: 600px;
+    padding-right: 20px;
+}
+.concept-card.management img{
+    width: 700px;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+.projects{
+    padding: 100px 0;
+}
+.projects-head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.projects-head h2{
+    font-size: 40px;
+}
+.projects-head a{
+    display: flex;
+    height: 40px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    position: relative;
+    padding: 0px 50px 0 70px;
+    border-radius: 3px;
+    background-color: #5BC0DF; 
+    color: white;
+}
+.more-articles{
+    position: relative;
+    left: -45px;
+}
+.projects-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-card{
+    box-shadow: 0 0 8px rgb(214, 214, 214);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.projects-card:hover{
+    filter: brightness(110%);
+    box-shadow: 0 0 30px rgb(179, 179, 179);
+}
+.image-back{
+    height: 220px;
+    background-blend-mode: multiply;
+}
+.image-back.chips{
+    background: url("https://onion.io/wp-content/uploads/2021/02/omega2-family-600x278.png"), linear-gradient(white 20%, rgb(172, 172, 172));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+.image-back.camera{
+    background: url("https://onion.io/wp-content/uploads/2020/10/tau_cam-600x384.png"), linear-gradient(white 20%, rgb(172, 172, 172));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.projects-card .main-card{
+    padding: 40px 25px 50px 25px;
+    height: 160px;
+}
+.projects-card .main-card h2{
+    font-size: 21px;
+    padding-bottom: 30px;
+    color: #5A616B;
+    cursor: pointer;
+}
+.projects-card .main-card p{
+    font-size: 13px;
+    display: flex;
+    align-items: flex-end;
+    color: #c95f7f;
+    cursor: pointer;
+}
+.projects-card .main-card p span{
+    font-size: 7px;
+}
+.read-more{
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+}
+.projects-card .bottom-card{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    border-top: 1px solid #d3d9e2;
+    color: #797979;
+}
+.projects-card .bottom-card p{
+    font-size: 12px;
+    padding-right: 15px;
+}
+.projects-card .bottom-card li{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.question-block{
+    background: linear-gradient(to bottom right, #9A4B63 0%, #6B4D76 100%);
+}
+.question-block-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-text{
+    padding: 100px 10px;
+    color: white;
+    padding-right: 120px;
+}
+.question-text h2{
+    font-size: 32px;
+}
+.question-text p{
+    font-size: 28px;
+}
+.question-block-all .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 180px;
+}
+.question-block-all .buttons button:first-child{
+    border: 1px solid white;
+    color: white;
+    background-color: #9A4B63;
+}
+.question-block-all .buttons button{
+    padding: 13px 0;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #9A4B63;
+    color: #a16275;
+    background-color: white;
+    cursor: pointer;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #212942;
+    padding: 50px 0;
+}
+.company-discription .logo-bot img{
+    width: 100px;
+}
+.company-discription .logo-bot{
+    padding-bottom: 20px;
+}
+.company-discription p{
+    color: rgb(173, 173, 173);
+    font-size: 16px;
+    width: 100%;
+    white-space: pre;
+}
+.other-products-company{
+    display: flex;
+    margin: 0 auto;
+}
+.cols-product{
+    display: flex;
+}
+.other-prod{
+    width: 240px;
+}
+.company-discription{
+    padding-right: 60px;
+}
+.top-footer{
+    display: flex;
+    justify-content: center;
+}
+.col-product h2{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.list-products li{
+    font-size: 16px;
+    list-style-type: none;
+    padding-bottom: 12px;
+}
+.list-products li a{
+    color: rgb(173, 173, 173);
+}
+.list-products li a span{
+    font-size: 10px;
+    padding-right: 10px;
+}
+.list-products li a:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.footer.footer-bar{
+    border-top: 1px solid rgb(40, 54, 82);
+    padding: 30px 0;
+}
+.footer-bar-content p{
+    color: rgb(173, 173, 173);
+}
+.footer-bar-content p a{
+    color: #0075F7;
+}
+.footer-bar-content p a:hover{
+    color: #004ea7;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1330px) {
+    .projects-cards{
+        display: inline-block;
+        column-count: 2;
+        column-gap: 20px;
+        text-align: center;
+    }
+    .projects-card{
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .main-card{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    nav{
+        margin-left: 300px;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+    nav{
+        margin-left: 200px;
+    }
+    .mv-100{
+        min-width: 50%;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    .concept-production{
+        flex-direction: column;
+    }
+    .company-discription p{
+        white-space: normal;
+        width: 200px;
+    }
+    .other-prod{
+        width: 220px;
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+    .main__lidarCamera{
+        padding: 70px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lidarCamera-block{
+        height: 700px;
+    }
+
+}
+
+
+@media screen and (max-width: 990px) {
+    .nav-link{
+        position: absolute;
+        top: 58px;
+        background-color: white;
+    }
+    .topnav a{
+        display: none;
+    }
+    .topnav{
+        align-items: center;
+    }
+    .topnav a.icon{
+        padding-right: 40px;
+        display: block;
+        color: black;
+        font-size: 25px;
+    }
+    .topnav.responsive{
+        position: relative;
+        background-color: white;
+    }
+    .topnav.responsive a{
+        display: block;
+        text-align: left;
+    }
+    .more-dropdown{
+        float: right;
+        top: -2px;
+    }
+    .lidarCamera__right{
+        padding-left: 0;
+    }
+    .other-products-company{
+        flex-direction: column;
+    }
+    .company-discription p{
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .footer-bar-content{
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .compute-platform-cards{
+        display: block;
+        column-count: 2;
+        column-gap: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 815px) {
+    .projects-cards{
+        display: block;
+        margin: 0 auto;
+        column-count: 1;
+    }
+    .projects-card{
+        display: inline-block;
+        width: 100%;
+    }
+    .projects-head{
+        display: block;
+    }
+    .projects-head a{
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+        padding-top: 20px; 
+        height: 100%;
+    }
+    .projects-head a span{
+        display: flex;
+        position: relative;
+        top: -15px;
+    }
+    .concept-card{
+        display: block;
+    }
+    .concept-card img.mv-100{
+        width: 100%;
+        padding: 0;
+    }
+    .question-block-all{
+        flex-direction: column;
+        
+    }
+    .question-text{
+        padding-right: 0;
+        text-align: center;
+    }
+    .question-block-all{
+        padding-bottom: 85px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .cols-product{
+        flex-direction: column;
+    }
+    .other-prod{
+        padding-bottom: 30px;
+    }
+    .footer-bar-content{
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .topnav button{
+        margin-left: auto;
+    }
+    .lidarCamera__left{
+        width: auto;
+        height: auto;
+    }
+    .lidarCamera__right img{
+        width: 100%;
+    }
+    .compute-platform-cards{
+        column-count: 1;
+    }
+    nav{
+        margin-left: 0;
+    }
+    .center-header{
+        justify-content: space-around;
+        width: 100%;
+    }
+    .footer-bar-content{
+        width: auto;
+        text-align: center;
+    }
+}
+
